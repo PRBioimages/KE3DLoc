@@ -32,6 +32,8 @@ To experiment with subcellular location classification loss, modify the `criteri
 ### 3-Statistical Cell
 [Statistical Cell](AllenCellModeling/pytorch_integrated_cell) is trained with the Allen Cell dataset. After training, its encoder (`StatisticalCell-encoder.pth`) is extracted and can be loaded through `3-Statistical Cell Model/*.py` for image feature extraction and classification.
 
+[StatisticalCell-encoder.pth](https://drive.google.com/drive/folders/1TJTISOqxZlox2m3yQ9FsIXH0AM2HEVzL?usp=sharing)
+
 ### 4-Cytoself
 [Pre-trained Cytoself](https://github.com/royerlab/cytoself/tree/cytoself-tensorflow) is used for feature extraction. Follow these steps:
 1. Convert 3D images to 2D format for cytoself with `image_to2D.py`.
