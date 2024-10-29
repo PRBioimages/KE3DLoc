@@ -41,7 +41,7 @@ To experiment with subcellular location classification loss, modify the `criteri
 3. These features can be loaded for classification using `4-Cytoself/*.py`.
 
 ### 5-KE3DLoc
-- **GO Feature Extraction**: GO features, pre-extracted with PubmedBERT, are stored in `best_model/go_embedding.pth`.
+- **GO Feature Extraction**: GO features, pre-extracted with PubmedBERT, are stored in `best_model/go_embedding.pth` and can be retrieved along with other pre-trained models from from [5-best_model](https://drive.google.com/drive/folders/1W3cvFcn7iGuURAoSYUys9tF5fV3K1KyE?usp=sharing).
 - **Knowledge Graph Triplets**: Protein-GO and GO-GO triplets from the Protein Knowledge Graph associated with proteins in the Opencell dataset can be found in:
   - `best_model/Protein_GO_ID_old_weight.pkl`
   - `best_model/GO_GO_ID_old_weight.pkl`
