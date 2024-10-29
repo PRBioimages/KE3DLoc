@@ -38,8 +38,7 @@ To experiment with subcellular location classification loss, modify the `criteri
 [Pre-trained Cytoself](https://github.com/royerlab/cytoself/tree/cytoself-tensorflow) is used for feature extraction. Follow these steps:
 1. Convert 3D images to 2D format for cytoself with `image_to2D.py`.
 2. Use `examples/simple_example.py` in the [Cytoself](https://github.com/royerlab/cytoself/tree/cytoself-tensorflow) to extract global and local features, saving them in `embedding_feature`.
-
-   These features can be loaded for classification using `4-Cytoself/*.py`.
+3. These features can be loaded for classification using `4-Cytoself/*.py`.
 
 ### 5-KE3DLoc
 - **GO Feature Extraction**: GO features, pre-extracted with PubmedBERT, are stored in `best_model/go_embedding.pth`.
