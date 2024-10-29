@@ -307,7 +307,7 @@ def main():
     optimizer = torch.optim.Adam(params=model.parameters(), lr=1e-4)
     criterion = myAsymmetricLoss(gamma_neg=4, gamma_pos=0, clip=0.05, positive_clip=0, disable_torch_grad_focal_loss=True)
     save_path = '/loss_w'
-    raw_model_path = 'basemodel/'
+    raw_model_path = 'model/'
     model_path = os.path.join(save_path, 'model_last.pth')
     csv_path = os.path.join(save_path, 'checkpoints.csv')
     print('if loading model...')
