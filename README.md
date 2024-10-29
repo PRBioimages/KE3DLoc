@@ -26,6 +26,7 @@ The cell feature extraction module in KE3DLoc provides various experiments:
 - **ID Loss Experiments**: Execute `ID.py` for ID loss-related experiments.
   
 To experiment with subcellular location classification loss, modify the `criterion`'s asymmetric loss parameter and the class confidence weight in `ProteinDataset` in the respective `.py` files. Additional loss details are in `src/losses`.
+
 [Pre-trained models](https://drive.google.com/drive/folders/1VjyLdgvXGA1BLraKEmzRfpnj9ozrvAZG?usp=sharing) of this module.
 
 ### 3-Statistical Cell
