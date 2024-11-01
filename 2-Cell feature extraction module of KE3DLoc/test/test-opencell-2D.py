@@ -386,8 +386,8 @@ def main():
     save_path = '../model_6block_segblock_2D_12'
     model_path = os.path.join(save_path, 'model_last.pth')
 
-    raw_csv_path = os.path.join(save_path, 'balance/checkpoints.csv')
-    csv_path = os.path.join(save_path, 'balance/test-checkpoints.csv')
+    raw_csv_path = os.path.join(save_path, 'checkpoints.csv')
+    csv_path = os.path.join(save_path, 'test-checkpoints.csv')
     print('if loading model...')
     if if_load == 1:
         if os.path.exists(csv_path):
@@ -447,7 +447,7 @@ def main():
 
         val_loss, aps, apsdict, subset_acc, jaccard_score_micro, jaccard_score_macro, jaccard_score_samples, micro_f1, macro_f1, mcc, hammingloss, matlab_data = validate_multi(
             val_dataloader, model)
-        matlab_save_path = os.path.join(save_path, f'balance/test-{epoch}.mat')
+        matlab_save_path = os.path.join(save_path, f'test-{epoch}.mat')
         sio.savemat(matlab_save_path, matlab_data)
         torch.cuda.empty_cache()
         torch.cuda.empty_cache()
